@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+.body{
+  background-color:#EAEAEA;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.seach{
+  box-shadow: 0 9px 10px rgb(1 119 251/ 0.05);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.circle { 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  height: 100px; 
+  width: 200px; 
+  border-radius: 150px 150px 0 0; }
+
+  .half-circle {
+    width: 100px;
+    height: 50px; /* as the half of the width */
+    background-color: none;
+    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+    border: 10px solid gray;
+    border-bottom: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid #0064ED;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rotateBox{
+  background-color:#0064ED ;
 }
